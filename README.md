@@ -1,6 +1,9 @@
 # Irregular
 
-Regular expressions are very powerful, but their syntax can get large and archaic quickly. Irregular is a simple templating language for regular expressions. It helps you abstract chunks of your regular expressions into methods to help make them more readable.
+Regular expressions are very powerful, but they can get large and archaic quickly. Irregular provides tools that work together to help you abstract your regular expressions into human-readable code.
+
+Irregular-rb comes with:
+* A templating language for Regular Expressions that helps you abstract each chunk into a human-readable string
 
 irregular-rb is based on [irregular-js](https://github.com/suchipi/irregular-js). 
 
@@ -79,7 +82,11 @@ If passed with a Regexp object, it will be or-ed against the Regexp's existing o
 
 Pull requests, bug reports welcome.
 
-This library tries to mirror compilation behavior of irregular-js as much as possible- if you notice behavior you think might be a bug, test if it behaves the same in irregular-js first. If you still think it's a bug, the report should be filed against irregular-js, and then once it is resolved there, a bug report should be filed here.
+This library tries to mirror compilation behavior of irregular-js as much as possible/needed- if you notice behavior you think might be a bug, test if it behaves the same in irregular-js first. If you still think it's a bug, the report should be filed against irregular-js, and then once it is resolved there, a bug report should be filed here.
+
+## Notes
+
+This library doesn't implement irregular-js's named captures functionality because named captures are supported natively in Ruby (they aren't in ES5).
 
 ## Running tests
 
